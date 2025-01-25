@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./app.css"
 const App = () => {
   const [counter, setCounter] = useState(0);
   const [prize, setPrize] = useState(null);
@@ -24,7 +24,7 @@ const App = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", padding: "20px" }}>
+    <div className="counter" >
       <h1>Click Counter Game</h1>
       <p>Current Score: {counter} points</p>
       {prize && <p style={{ color: "green", fontWeight: "bold" }}>{prize}</p>}
